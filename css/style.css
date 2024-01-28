@@ -116,7 +116,7 @@ h6 {
   height: 200px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background: #f6f8fa;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
   clip-path: polygon(0 0, 0% 105%, 100% 100%);
@@ -219,17 +219,11 @@ h6 {
   height: 200px;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background: #0da144;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
   clip-path: polygon(0 0, 0% 105%, 100% 100%);
   z-index: 1;
-}
-
-@media (max-width: 375.98px) {
-  .quote .vision-h2 h2 {
-    font-size: 45px;
-  }
 }
 
 /**************************************/
@@ -283,7 +277,8 @@ h6 {
   }
 
   .section-header h2 {
-    font-size: 60px;
+    font-size: 45px;
+    font-weight: 700;
   }
 
   .section-header p {
