@@ -198,7 +198,7 @@ h6 {
 @media (max-width: 575.98px) {
   .main-page-logo {
     width: 250px;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 150px;
   }
 }
@@ -211,8 +211,6 @@ h6 {
   position: relative;
   padding: 0 0 150px 0;
   background: #f6f8fa;
-  /* background: linear-gradient(rgba(246, 248, 250, ), rgba(0, 150, 58, 0.95)),
-    url(../img/header.jpg) no-repeat top center; */
 }
 
 .quote::after {
@@ -228,28 +226,10 @@ h6 {
   z-index: 1;
 }
 
-.second-quote {
-  position: relative;
-  padding: 0 0 150px 0;
-  background: #e6e6e6;
-}
-
-.second-quote h2 {
-  text-align: right;
-  color: #00ce45;
-}
-
-.second-quote::after {
-  position: absolute;
-  content: "";
-  height: 200px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #0da144;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
-  clip-path: polygon(0 0, 0% 105%, 100% 100%);
-  z-index: 1;
+@media (max-width: 575.98px) {
+  .quote .section-header h2 {
+    font-size: 45px;
+  }
 }
 
 /**************************************/
@@ -373,6 +353,13 @@ p {
   font-size: 60px;
   /* font-weight: 200; */
   /* margin-bottom: 100px; */
+}
+
+@media (max-width: 575.98px) {
+  .inspector .section-header h2 {
+    font-size: 55px;
+    margin-top: 10px;
+  }
 }
 
 .inspector .inspector-about img {
