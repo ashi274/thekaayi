@@ -1,0 +1,637 @@
+/**************************************/
+/************ General CSS *************/
+/**************************************/
+body {
+  color: #555555;
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+}
+
+a {
+  color: #00ad3a;
+  transition: 0.3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #666666;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  color: #555555;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
+  color: #666666;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/**************************************/
+/********** Back to Top CSS ***********/
+/**************************************/
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #111111;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 35px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.3s;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  z-index: 9;
+}
+
+.back-to-top i {
+  color: #00ad3a;
+}
+
+.back-to-top:hover {
+  background: #00ad3a;
+}
+
+.back-to-top:hover i {
+  color: #ffffff;
+}
+
+/**************************************/
+/************* Header CSS *************/
+/**************************************/
+.header {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 200px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 173, 58, 0.95), rgba(0, 150, 58, 0.95)),
+    url(../img/heade) no-repeat top center;
+  background-size: cover;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f6f8fa;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 105%, 100% 100%);
+  z-index: 1;
+}
+
+.header .container {
+  max-width: 700px;
+}
+
+.header h4 {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 3px;
+}
+
+.header h1 {
+  position: relative;
+  color: #111111;
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 45px;
+}
+
+.header h1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #638b25;
+}
+
+.header p {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.header .btn {
+  padding: 15px 35px;
+  color: #00ad3a;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 0;
+  background: #ffffff;
+}
+
+.header .btn:hover {
+  background: #111111;
+}
+
+.header .btn i {
+  margin-right: 5px;
+}
+
+.main-page-logo {
+  position: relative;
+  width: 400px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+@media (max-width: 767.98px) {
+  .main-page-logo {
+    width: 300px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main-page-logo {
+    width: 250px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+}
+
+/**************************************/
+/******** Vision Quote CSS **********/
+/**************************************/
+
+.quote {
+  position: relative;
+  padding: 0 0 150px 0;
+  background: #f6f8fa;
+  /* background: linear-gradient(rgba(246, 248, 250, ), rgba(0, 150, 58, 0.95)),
+    url(../img/header.jpg) no-repeat top center; */
+}
+
+.quote::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0da144;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 105%, 100% 100%);
+  z-index: 1;
+}
+
+.second-quote {
+  position: relative;
+  padding: 0 0 150px 0;
+  background: #e6e6e6;
+}
+
+.second-quote h2 {
+  text-align: right;
+  color: #00ce45;
+}
+
+.second-quote::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0da144;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 105%, 100% 100%);
+  z-index: 1;
+}
+
+/**************************************/
+/******** Section Header CSS **********/
+/**************************************/
+.section-header {
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto 60px auto;
+  text-align: left;
+}
+
+.section-header h4 {
+  color: #00ad3a;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 3px;
+}
+
+.section-header h2 {
+  color: #00ad3a;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.section-header p {
+  font-size: 22px;
+  margin: 0;
+}
+
+@media (max-width: 767.98px) {
+  .section-header h4 {
+    font-size: 60px;
+  }
+
+  .section-header h2 {
+    font-size: px;
+  }
+
+  .section-header p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-header h4 {
+    font-size: 25px;
+  }
+
+  .section-header h2 {
+    font-size: 60px;
+  }
+
+  .section-header p {
+    font-size: 18px;
+  }
+}
+
+/**************************************/
+/************* About CSS **************/
+/**************************************/
+.about {
+  position: relative;
+  padding: 0 0 100px 0;
+  background: #0da144;
+  text-align: center;
+}
+
+.about .about-us img {
+  position: relative;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.about .about-us h2 {
+  margin-bottom: 35px;
+}
+
+.about .about-us p {
+  margin-bottom: 40px;
+  /* font-size: 18px; */
+}
+
+.about .about-us h2,
+p {
+  text-align: center;
+  color: #f6f8fa;
+}
+
+.about .about-content::before {
+  position: absolute;
+  content: "";
+  height: 90px;
+  left: 0;
+  right: 0;
+  top: -89px;
+  background: #f6f8fa;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+/*********************************************/
+/************ iNSPECTOR Page CSS ************/
+/*********************************************/
+
+.inspector {
+  position: relative;
+  background: #344ea7;
+  padding: 110px 0 200px 0;
+}
+
+.inspector .section-header h2 {
+  margin: auto;
+  color: #f2f2f2;
+  margin-top: 60px;
+  font-size: 60px;
+  /* font-weight: 200; */
+  /* margin-bottom: 100px; */
+}
+
+.inspector .inspector-about img {
+  /* position: relative; */
+  width: 300px;
+  /* left: 50px; */
+  text-align: right;
+}
+
+.inspector .inspector-about p {
+  text-align: center;
+  margin-top: 50px;
+  /* margin-left: -50px; */
+  text-align: right;
+}
+
+.inspector::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background: #435eb9;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+/*********************************************/
+/************ Why iNSPECTOR CSS **************/
+/*********************************************/
+
+.why-inspector {
+  position: relative;
+  background: #435eb9;
+  padding: 0 0 200px 0;
+}
+
+.why-inspector::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  background: #f2f2f2;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  z-index: 1;
+}
+
+.why-inspector h2,
+h4 {
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.why-inspector h2 {
+  font-size: 90px;
+  margin-bottom: 30px;
+}
+
+.why-icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.why-inspector p {
+  margin: 20px;
+}
+
+.col-md-6 {
+  margin-bottom: 40px;
+}
+
+/**************************************/
+/************* Contact CSS ************/
+/**************************************/
+.contact {
+  position: relative;
+  padding: 0 0 90px 0;
+  background: #f2f2f2;
+  text-align: center;
+}
+
+.contact p {
+  color: #000000;
+}
+
+.contact .section-header h2 {
+  text-align: center;
+  color: #0da144;
+}
+
+.contact .contact-inner h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 60px;
+}
+
+.contact .contact-inner h2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 8px;
+  left: calc(50% - 50px);
+  bottom: 60px;
+  background: #666666;
+}
+
+.contact .contact-inner i {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 15px;
+  padding: 22px 0;
+  text-align: center;
+  font-size: 45px;
+  color: #ffffff;
+  background: #00ad3a;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+.contact .contact-inner p {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+@media (max-width: 767.98px) {
+  .contact .contact-inner h2 {
+    font-size: 45px;
+  }
+
+  .contact .contact-inner i {
+    width: 60px;
+    height: 60px;
+    padding: 12px 0;
+    font-size: 35px;
+  }
+
+  .contact .contact-inner p {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact .contact-inner h2 {
+    font-size: 30px;
+  }
+
+  .contact .contact-inner i {
+    width: 50px;
+    height: 50px;
+    padding: 12px 0;
+    font-size: 25px;
+  }
+
+  .contact .contact-inner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+/**************************************/
+/************* Footer CSS *************/
+/**************************************/
+.footer {
+  position: relative;
+  padding: 5px 0 30px 0;
+  background: #00ad3a;
+  text-align: center;
+}
+
+.footer .social-links {
+  padding-top: 30px;
+}
+
+.footer .social-links a {
+  font-size: 28px;
+  display: inline-block;
+  background: #ffffff;
+  color: #00ad3a;
+  line-height: 1;
+  padding: 9px 0;
+  margin-right: 4px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  -webkit-clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: #111111;
+  color: #00ad3a;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  color: #ffffff;
+}
+
+.footer .copyright,
+.credit {
+  font-size: 10px;
+}
+
+.footer .credit {
+  padding-top: 1px;
+  color: #ffffff;
+}
+
+.footer .copyright a,
+.footer .credit a {
+  color: #111111;
+  font-weight: 500;
+}
+
+.footer .copyright a:hover,
+.footer .credit a:hover {
+  color: #ffffff;
+}
